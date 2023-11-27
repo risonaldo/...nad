@@ -1,0 +1,38 @@
+#Variáveis de ambiente GLOBAIS🗺
+# ================================
+#Variáveis de ambiente container APACHE🚩
+
+CONTEXTO_APLICACAO_APACHE="."
+
+DIRETORIO_DOCKERFILE_APACHE=".docker/Dockerfile"
+
+NOME_CONTAINER_APACHE="apache-php-5.6"
+
+# NOME_IMAGEM="<nomeDaImagem>"
+# # TAG_DA_IMAGEM="setup"
+# TAG_DA_IMAGEM="dev"
+# # TAG_DA_IMAGEM="prod"
+
+DIRETORIO_VOLUME_APACHE="${PWD}/www/" # ${PWD}
+
+PORTA_CONTAINER_APACHE='80'
+
+#Variáveis de ambiente container MYSQL 🚩
+
+NOME_CONTAINER_MYSQL="mysql-5.6"
+
+#💬Segue padrão do oocker Hub
+IMAGEM_CONTAINER_MYSQL="mysql:5.6"
+
+# NOME_IMAGEM="<nomeDaImagem>"
+# # TAG_DA_IMAGEM="setup"
+# TAG_DA_IMAGEM="dev"
+# # TAG_DA_IMAGEM="prod"
+
+DIRETORIO_VOLUME_MYSQL="${PWD}/banco" # ${PWD}
+
+TIMEZONE_MYSQL= "America/Manaus"
+MYSQL_APP_ROOT_PASSWORD="root"
+MYSQL_HOST="%"
+
+PORTA_CONTAINER_MYSQL='3306'
